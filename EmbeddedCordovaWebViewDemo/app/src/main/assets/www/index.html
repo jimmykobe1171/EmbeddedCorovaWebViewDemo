@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<title>Your Homepage</title>
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/button-handlers.js"></script>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body onload="onLoad()" class="content">
+        <div class="harabara">
+        <p>This is a Cordova WebView, embedded in a Native app.</p>
+        <p>To spruce up the UI, you could use a framework like jQueryMobile...</p>
+        <br/>
+        <button onclick="toastButtonHandler()" class="harabara">Make a Toast</button>
+        <br/>
+        <br>
+        <button onclick="openLink()" class="harabara">Go to google</button>
+        <br/>
+        <br>
+        <button onclick="cordovaButtonHandler()" class="harabara">Get some device info using cordova</button>
+        </br>
+        </div>
+    </body>
+</html>
